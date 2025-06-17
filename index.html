@@ -8,6 +8,7 @@
     *, *::before, *::after {
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -18,18 +19,21 @@
       color: #1a1a1a;
       line-height: 1.6;
     }
+
     h1 {
       text-align: center;
-      margin-bottom: 1rem;
       font-size: 2.25rem;
       color: #004080;
+      margin-bottom: 0.5rem;
     }
+
     p {
       text-align: center;
       color: #444;
       font-size: 1rem;
       margin-bottom: 2rem;
     }
+
     h2 {
       font-size: 1.5rem;
       border-bottom: 2px solid #eee;
@@ -37,31 +41,48 @@
       margin-bottom: 1rem;
       color: #222;
     }
+
     ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
       margin: 0;
     }
+
     li {
       background: #f9f9f9;
       margin-bottom: 1rem;
       border-radius: 8px;
       box-shadow: 0 1px 4px rgb(0 0 0 / 0.05);
       padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       transition: background-color 0.2s ease;
     }
+
     li:hover {
       background-color: #e6f0ff;
     }
+
     a {
-      text-decoration: none;
-      color: #004080;
       font-weight: 600;
       font-size: 1.1rem;
+      color: #004080;
+      text-decoration: none;
+      flex-grow: 1;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    time {
+      font-size: 0.875rem;
+      color: #888;
+      margin-left: 1rem;
+      white-space: nowrap;
+    }
+
     footer {
       margin-top: 3rem;
       font-size: 0.875rem;
@@ -78,8 +99,14 @@
 
   <h2>Recent Entries</h2>
   <ul>
-    <li><a href="entries/2025-06-17.html">2025-06-17 — Jett Williams Call-Up & Zion Williamson Pickup</a></li>
-    <li><a href="entries/2025-06-16.html">2025-06-16 — Yankees Prospect Watch & Topps Chrome Deals</a></li>
+    <li>
+      <a href="entries/2025-06-17.html">Jett Williams Call-Up & Zion Williamson Pickup</a>
+      <time datetime="2025-06-17">Jun 17, 2025</time>
+    </li>
+    <li>
+      <a href="entries/2025-06-16.html">Yankees Prospect Watch & Topps Chrome Deals</a>
+      <time datetime="2025-06-16">Jun 16, 2025</time>
+    </li>
     <!-- Add new entries here -->
   </ul>
 
